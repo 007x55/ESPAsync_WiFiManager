@@ -87,7 +87,8 @@ size_t webSocketSendFrame(AsyncClient *client, bool final, uint8_t opcode, bool 
   space -= headLen;
 
   if (len > space)
-    len = space;
+    len = space;#include <WiFiManager.h>          //https://github.com/tzapu/WiFiManager WiFi Configuration Magic
+    
 
   uint8_t *buf = (uint8_t*)malloc(headLen);
 
